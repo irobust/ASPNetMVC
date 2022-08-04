@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\bin\Debug\net6.0\DemoMVC.Domain.deps.json
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\bin\Debug\net6.0\DemoMVC.Domain.dll
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\bin\Debug\net6.0\DemoMVC.Domain.pdb
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\DemoMVC.Domain.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\DemoMVC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\DemoMVC.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\DemoMVC.Domain.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\DemoMVC.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\DemoMVC.Domain.dll
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\refint\DemoMVC.Domain.dll
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\DemoMVC.Domain.pdb
+C:\Users\Administrator\source\repos\DemoMVC\DemoMVC.Domain\obj\Debug\net6.0\ref\DemoMVC.Domain.dll

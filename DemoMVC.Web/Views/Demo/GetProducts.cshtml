@@ -1,0 +1,23 @@
+﻿@model ProductListViewModel
+
+@{
+    Layout = "_Layout";
+}
+
+<div>
+    <h2>List of Products
+        @if(@Model.CurrentCategory != null){
+            @:On @Model.CurrentCategory
+        }
+    </h2>
+    @Html.Raw(@Model.CurrentCategory)
+    <ul>
+        @foreach (var product in @Model.Products)
+        {
+            @await Html.PartialAsync("ProductItem", product);
+        }
+        
+    </ul>
+
+    
+</div>

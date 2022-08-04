@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home Page";
+    Layout = "_CustomLayout";
+}
+
+@section style{
+    <style>
+        h1 {
+            color: #ddd;
+        }
+        .form-control{
+            background: #eee;
+        }
+    </style>
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">\
+    @if(ViewBag.hour < 12){
+        @:Good Morning
+    }else{
+        @:Good Afternoon
+    }
+        ASP.Net MVC</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    @Html.ActionLink("Registration Form", "RSVPForm", "RSVP")
+</div>
