@@ -19,5 +19,5 @@
         
     </ul>
 
-    
+    @Html.PageLinks(@Model, x => Url.Action("List", new { page = x}))
 </div>
