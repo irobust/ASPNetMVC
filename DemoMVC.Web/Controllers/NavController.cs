@@ -1,4 +1,5 @@
-﻿using DemoMVC.Domain.Abstract;
+﻿using DemoMVC.Domain;
+using DemoMVC.Domain.Abstract;
 using DemoMVC.Domain.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,7 +14,7 @@ namespace DemoMVC.Web.Controllers
         }
         public PartialViewResult Menu()
         {
-            IEnumerable<string> categories = repository.Products
+            IEnumerable<Category> categories = repository.Products
                                             .Select(p => p.Category)
                                             .Distinct();
             return PartialView(categories);

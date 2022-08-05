@@ -1,4 +1,5 @@
-﻿using DemoMVC.Web.Interfaces;
+﻿using DemoMVC.Domain;
+using DemoMVC.Web.Interfaces;
 
 namespace DemoMVC.Web.Models
 {
@@ -9,6 +10,6 @@ namespace DemoMVC.Web.Models
         public PagingInfo PagingInfo { get; set; }
 
         
-        public string CurrentCategory { get; set; }
+        public Category CurrentCategory { get; set; }
     }
 }

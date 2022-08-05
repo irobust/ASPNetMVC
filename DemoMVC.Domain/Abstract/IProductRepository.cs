@@ -10,5 +10,7 @@ namespace DemoMVC.Domain.Abstract
     public interface IProductRepository
     {
         IEnumerable<Product> Products { get; }
+        Product SaveProduct(Product product);
+        Product DeleteProduct(int productId);
     }
 }

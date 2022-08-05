@@ -1,4 +1,5 @@
-﻿using DemoMVC.Domain.Concrete;
+﻿using DemoMVC.Domain;
+using DemoMVC.Domain.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoMVC.Web.ViewComponents
@@ -10,9 +11,9 @@ namespace DemoMVC.Web.ViewComponents
         {
             repository = new ProductRepository();
         }
-        public IViewComponentResult Invoke(string currentCategory)
+        public IViewComponentResult Invoke(Category currentCategory)
         {
-            IEnumerable<string> categories = repository.Products
+            IEnumerable<Category> categories = repository.Products
                                             .Select(p => p.Category)
                                             .Distinct();
             ViewBag.CurrentCategory = currentCategory;

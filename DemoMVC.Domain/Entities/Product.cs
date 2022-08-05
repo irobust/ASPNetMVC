@@ -21,8 +21,9 @@ namespace DemoMVC.Domain.Entities
 
         [Required]
         [DataType("decimal(19,4)")]
+        [Range(0.00, double.MaxValue)]
         public decimal Price { get; set; }
 
-        public string Category { get; set; }
+        public Category Category { get; set; }
     }
 }

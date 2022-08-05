@@ -1,0 +1,11 @@
+﻿@model DemoMVC.Domain.Entities.Product
+
+@using(Html.BeginForm()){
+    <p>Product Name: @Html.TextBoxFor(p => p.Name)</p>
+    <p>Description: @Html.TextBoxFor(p => p.Description)</p>
+    <p>Price: @Html.TextBoxFor(p => p.Price)</p>
+    <p>Category: @Html.TextBoxFor(p => p.Category)</p>
+
+    <input type="submit" value="Add new product" 
+           class="btn btn-success"/>
+}

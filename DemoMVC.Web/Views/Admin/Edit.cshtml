@@ -1,0 +1,17 @@
+﻿@model DemoMVC.Domain.Entities.Product
+
+<h1>Edit @Model.Name</h1>
+@Html.ValidationSummary()
+@using(Html.BeginForm("Edit", "Admin")){
+    @Html.HiddenFor(p => p.ProductId)
+    <p>Product Name: @Html.TextBoxFor(p => p.Name, new{ Value=@Model.Name})</p>
+    <div>@Html.ValidationMessage(@Model.Name)</div>
+    <p>Description: @Html.TextBoxFor(p => p.Description, @Model.Description)</p>
+    <p>Price: @Html.TextBoxFor(p => p.Price, @Model.Price)</p>
+    <p>Category: @Html.TextBoxFor(p => p.Category, @Model.Category)</p>
+
+    <input type="submit" value="Edit product" 
+           class="btn btn-success"/>
+    @Html.ActionLink("Cancel and return to List", "Index")
+}
+

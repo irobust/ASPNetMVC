@@ -5,9 +5,13 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoMVC.Web", "DemoMVC.Web\DemoMVC.Web.csproj", "{B069802C-DAA8-42AD-8426-2B12CD802018}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDemoMVC", "TestDemoMVC\TestDemoMVC.csproj", "{4CD83969-FE85-4054-9A83-BA6765AE6C12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDemoMVC", "TestDemoMVC\TestDemoMVC.csproj", "{4CD83969-FE85-4054-9A83-BA6765AE6C12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoMVC.Domain", "DemoMVC.Domain\DemoMVC.Domain.csproj", "{CBF016BE-5CDB-4F08-AB28-A794753C5E70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoMVC.Domain", "DemoMVC.Domain\DemoMVC.Domain.csproj", "{CBF016BE-5CDB-4F08-AB28-A794753C5E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationProject", "AuthenticationProject\AuthenticationProject.csproj", "{E4FD6B81-3757-46A7-BD8E-481147A1A610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationProject2", "AuthenticationProject2\AuthenticationProject2.csproj", "{B72EFF89-5A90-44B4-BF58-17D4A10CEEBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{CBF016BE-5CDB-4F08-AB28-A794753C5E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBF016BE-5CDB-4F08-AB28-A794753C5E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBF016BE-5CDB-4F08-AB28-A794753C5E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FD6B81-3757-46A7-BD8E-481147A1A610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FD6B81-3757-46A7-BD8E-481147A1A610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FD6B81-3757-46A7-BD8E-481147A1A610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FD6B81-3757-46A7-BD8E-481147A1A610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72EFF89-5A90-44B4-BF58-17D4A10CEEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72EFF89-5A90-44B4-BF58-17D4A10CEEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72EFF89-5A90-44B4-BF58-17D4A10CEEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72EFF89-5A90-44B4-BF58-17D4A10CEEBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

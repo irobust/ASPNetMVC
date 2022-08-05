@@ -1,4 +1,5 @@
-﻿@model IEnumerable<string>
+﻿@using DemoMVC.Domain
+@model IEnumerable<Category>
 
 @Html.ActionLink("Home", "GetProducts", "Demo"
                        , new { page = 1}
@@ -8,7 +9,8 @@
 
 @foreach (var category in @Model)
 {
-    @Html.RouteLink(category, new {
+    string strCategory = Enum.GetName<Category>(category) ?? "";
+    @Html.RouteLink(strCategory.ToString(), new {
         controller = "Demo",
         action = "GetProducts",
         category = category,

@@ -20,7 +20,7 @@ namespace DemoMVC.Web.Controllers
         }
 
         [Route("GetProducts/{category?}")]
-        public IActionResult GetProducts(string category=null, int page=1)
+        public IActionResult GetProducts(Domain.Category? category =null, int page=1)
         {
             ProductListViewModel model = new ProductListViewModel
             {
@@ -37,7 +37,7 @@ namespace DemoMVC.Web.Controllers
                                            .Where(p => category == null || p.Category == category)
                                            .Count()
                 },
-                CurrentCategory = category
+                CurrentCategory = category ?? Domain.Category.Food
             };
             return View(model);
         }

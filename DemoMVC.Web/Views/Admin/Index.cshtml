@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DemoMVC.Domain.Entities.Product>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>All Products</h3>
+    </div>
+    <div class="panel-body">
+        @if(TempData["message"] != null)
+        {
+            <div class="alert alert-dismissible alert-success">
+                @TempData["message"] 
+                @if(TempData["productId"] != null){
+                    @Html.ActionLink(TempData["productId"]?.ToString(), 
+                                        "Edit", "Admin", 
+                                        new{ productId = TempData["productId"]})
+                }
+            </div>
+        }
+        <div class="d-inline-block pull-right">
+            @Html.ActionLink("Add new product", "Create", "Admin", null, 
+                            new{ @class = "btn btn-success"})
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                @foreach (var product in @Model)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Description</td>
+                        <td>@product.Price</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "Admin", new { product.ProductId }) | 
+                            @Html.ActionLink("Delete","Delete", "Admin", new { product.ProductId })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>

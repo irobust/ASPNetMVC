@@ -24,5 +24,38 @@ namespace DemoMVC.Domain.Concrete
                               .OrderByDescending(p => p.Name); 
             } 
         }
+
+        public Product SaveProduct(Product product)
+        {
+            if (product.ProductId == 0)
+            {
+                context.Products.Add(product);
+            }
+            else
+            {
+                Product? selectedProduct = context.Products
+                                            .Find(product.ProductId);
+                if(selectedProduct != null)
+                {
+                    selectedProduct.Name = product.Name;
+                    selectedProduct.Description = product.Description;
+                    selectedProduct.Price = product.Price;
+                    selectedProduct.Category = product.Category;
+                }
+            }
+            context.SaveChanges();
+            return product;
+        }
+
+        public Product DeleteProduct(int productId)
+        {
+            var product = context.Products.Find(productId);
+            if (product != null)
+            {
+                context.Products.Remove(product);
+                context.SaveChanges();
+            }
+            return product ?? new Product();
+        }
     }
 }
